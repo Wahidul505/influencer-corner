@@ -246,7 +246,7 @@ footer span a{
 /* for mobile devices */
 @media only screen and (max-width:688px) {
   .container{
-    margin: 0px 0px 50px 0px;
+    margin-bottom: 50px;
   }
   nav{
     flex-direction: column;
@@ -269,10 +269,10 @@ footer span a{
     transform: translateY(-150px);
   }
   .banner-image{
-    width: 240px;
+    width: 270px;
   }
   .banner-details{
-    width: 240px;
+    width: 270px;
   }
   .collections{
     grid-template-columns: repeat(1,1fr);
@@ -280,20 +280,20 @@ footer span a{
   .collections-heading{
     font-size: 1.5em;
   }
+  .collections-button{
+    margin-right: 60px;
+  }
   .logo,hr{
     display: none;
   }
   .card{
-    width: 200px;
-  }
-  .collections-button{
-    margin-right: 60px;
+    width: 270px;
   }
   form{
     flex-direction: column;
   }
   .form-fill input{
-    width: 200px;
+    width: 250px;
   }
   footer{
     width: 100%;
