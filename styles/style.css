@@ -46,7 +46,8 @@ nav span a i{
 }
 /* styles for top banner */
 .top-banner{
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
@@ -54,6 +55,7 @@ nav span a i{
   font-size: 3em;
   font-family: 'Luxurious Roman', cursive;
   color: rgb(82, 105, 43);
+  transition: transform 1s ease 0s;
 }
 .banner-details{
   width: 580px;
@@ -79,11 +81,12 @@ nav span a i{
 .banner-image img{
   width: 100%;
   border-radius: 10px;
-  transition: transform 1s ease 0s;
 }
-.banner-image:hover img{
-  transform: scale(1.5) rotate(360deg);
+.banner-details:hover .banner-heading{
+  transform: translate(580px) scale(0.8);
+  color: whitesmoke;
 }
+
 
 
 /* styles for logo to display flexible */
@@ -94,7 +97,7 @@ nav span a i{
   justify-content: space-around;
 }
 .logo span{
-  width: 60px;
+  max-width: 60px;
   padding: 5px;
 }
 .logo span img{
@@ -154,6 +157,15 @@ hr{
   color: rgba(218, 165, 32, 0.863);
   margin-right: 30px;
   margin-top: 30px;
+}
+.fa-star.filled{
+  color: goldenrod;
+}
+.fa-star-half-alt{
+  color: goldenrod;
+}
+.fa-star.empty{
+  color: rgba(128, 128, 128, 0.493);
 }
 
 /* styles for form section */
@@ -227,4 +239,104 @@ footer span{
 }
 footer span a{
   margin-right: 10px;
+}
+
+/* Adding Media query for responsiveness */
+
+/* for mobile devices */
+@media only screen and (max-width:688px) {
+  .container{
+    margin: 0px 0px 50px 0px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav span a{
+    font-size: 0.6em;
+    margin-left: 5px;
+  }
+  .top-banner{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+  }
+  .banner-heading{
+    font-size: 1.8em;
+  }
+  .banner-details{
+    order: 2;
+  }
+  .banner-details:hover .banner-heading{
+    transform: translateY(-150px);
+  }
+  .banner-image{
+    width: 240px;
+  }
+  .banner-details{
+    width: 240px;
+  }
+  .collections{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .collections-heading{
+    font-size: 1.5em;
+  }
+  .logo,hr{
+    display: none;
+  }
+  .card{
+    width: 200px;
+  }
+  .collections-button{
+    margin-right: 60px;
+  }
+  form{
+    flex-direction: column;
+  }
+  .form-fill input{
+    width: 200px;
+  }
+  footer{
+    width: 100%;
+  }
+  
+}
+
+/* for tablet devices */
+@media only screen and (min-width:689px) and (max-width:992px){
+  .container{
+    margin: 0px 0px 50px 0px;
+    padding-right: 20px;
+  }
+  nav{
+    justify-content: center;
+  }
+  nav span h3{
+    margin-right: 40px;
+  }
+  .top-banner{
+    grid-template-columns: repeat(2fr, 1fr);
+    justify-items: center;
+  }
+  .banner-heading{
+    font-size: 2.5em;
+  }
+  .banner-details{
+    width: 300px;
+  }
+  .banner-details:hover .banner-heading{
+    transform: translate(370px, 50px) scale(0.7);
+  }
+  .banner-image{
+    width: 250px;
+  }
+  .banner-image img{
+    height: 200px;
+  }
+  .logo,hr{
+    display: none;
+  }
+  .collections{
+    grid-template-columns: 2fr 1fr;
+  }
+  
 }
