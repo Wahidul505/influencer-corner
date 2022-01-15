@@ -1,0 +1,190 @@
+/* importing font styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Luxurious+Roman&family=Open+Sans&display=swap');
+
+
+
+
+/* common styles */
+body{
+  margin: 0;
+}
+body p{
+  font-family: 'Open Sans', sans-serif;
+}
+.container{
+  margin: 0px 50px 90px 50px;
+}
+/* nav bar designing */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: lightblue; */
+}
+nav span{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+nav span h3{
+  font-size: 3em;
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+}
+nav span a{
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+}
+nav span a i{
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.781);
+}
+/* styles for top banner */
+.top-banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-heading{
+  font-size: 3em;
+  font-family: 'Luxurious Roman', cursive;
+  color: darkolivegreen;
+}
+.banner-details{
+  width: 580px;
+  /* border: 1px solid black; */
+}
+.banner-button{
+  width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(250, 117, 184);
+  color: white;
+  border-radius: 15px;
+  padding: 5px 12px;
+}
+.banner-image{
+  width: 500px;
+  /* border: 1px solid black; */
+}
+.banner-image img{
+  width: 100%;
+}
+
+
+/* styles for logo to display flexible */
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* styles for collection and card section  */
+.collections-heading{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 2.5em;
+  color: rgba(0, 0, 0, 0.61);
+}
+.collections{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 30px;
+  justify-items: center;
+  
+}
+.card{
+  height: 400px;
+  width: 300px;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.card-image img{
+  width: 92%;
+}
+.card h2{
+  line-height: 10px;
+}
+.card p{
+  font-size: .8em;
+}
+.collections-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.collections-button a{
+  width: 100px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(250, 117, 184);
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+/* styles for form section */
+.form-heading{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form div{
+  margin: 20px 20px;
+}
+form .form-image {
+  width: 200px;
+}
+.form-image img{
+  width: 100%;
+}
+.form-fill{
+  display: flex;
+  flex-direction: column;
+}
+.form-fill input{
+  margin-bottom: 20px;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.form-fill button{
+  height: 30px;
+  width: 210px;
+  background-color: rgb(250, 117, 184);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+/* styles for footer part  */
+footer{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+footer p,h2{
+  line-height: 0px;
+}
+footer span{
+  margin-top: 10px;
+}
+footer span a{
+  margin-right: 10px;
+}
