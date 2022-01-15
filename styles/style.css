@@ -13,7 +13,7 @@ body p{
   font-family: 'Open Sans', sans-serif;
 }
 .container{
-  margin: 0px 50px 90px 50px;
+  margin: 0px 60px 90px 60px;
 }
 /* nav bar designing */
 nav{
@@ -72,11 +72,17 @@ nav span a i{
   padding: 5px 12px;
 }
 .banner-image{
+  border-radius: 10px;
   width: 500px;
+  overflow: hidden;
 }
 .banner-image img{
   width: 100%;
   border-radius: 10px;
+  transition: transform 1s ease 0s;
+}
+.banner-image:hover img{
+  transform: scale(1.5) rotate(360deg);
 }
 
 
