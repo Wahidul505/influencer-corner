@@ -30,6 +30,7 @@ nav span h3{
   font-size: 3em;
   font-family: 'Dongle', sans-serif;
   margin: 0;
+  color: rgba(0, 0, 0, 0.87);
 }
 nav span a{
   text-decoration: none;
@@ -52,11 +53,10 @@ nav span a i{
 .banner-heading{
   font-size: 3em;
   font-family: 'Luxurious Roman', cursive;
-  color: darkolivegreen;
+  color: rgb(82, 105, 43);
 }
 .banner-details{
   width: 580px;
-  /* border: 1px solid black; */
 }
 .banner-button{
   width: 100px;
@@ -64,25 +64,41 @@ nav span a i{
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
-  background-color: rgb(250, 117, 184);
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  background-color:rgba(218, 165, 32, 0.863);
   color: white;
   border-radius: 15px;
   padding: 5px 12px;
 }
 .banner-image{
   width: 500px;
-  /* border: 1px solid black; */
 }
 .banner-image img{
   width: 100%;
+  border-radius: 10px;
 }
 
 
 /* styles for logo to display flexible */
 .logo{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+}
+.logo span{
+  width: 60px;
+  padding: 5px;
+}
+.logo span img{
+  width: 100%;
+}
+hr{
+  border-bottom: 1px solid;
+  border-image: linear-gradient(45deg,white, gray, white);
+  border-image-slice: 1;
+
 }
 
 
@@ -108,6 +124,8 @@ nav span a i{
   border-radius: 5px;
   padding-left: 15px;
   padding-top: 15px;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
 }
 .card-image img{
   width: 92%;
@@ -115,21 +133,19 @@ nav span a i{
 .card h2{
   line-height: 10px;
 }
-.card p{
-  font-size: .8em;
-}
 .collections-button{
   display: flex;
   justify-content: flex-end;
 }
 .collections-button a{
   width: 100px;
-  font-size: 18px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
-  color: rgb(250, 117, 184);
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(218, 165, 32, 0.863);
   margin-right: 30px;
   margin-top: 30px;
 }
@@ -137,7 +153,10 @@ nav span a i{
 /* styles for form section */
 .form-heading{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 2.5em;
+  color: rgba(0, 0, 0, 0.61);
 }
 
 form{
@@ -153,6 +172,7 @@ form .form-image {
 }
 .form-image img{
   width: 100%;
+  border-radius: 10px;
 }
 .form-fill{
   display: flex;
@@ -161,26 +181,40 @@ form .form-image {
 .form-fill input{
   margin-bottom: 20px;
   height: 30px;
-  width: 200px;
+  width: 300px;
   border-radius: 5px;
   border: 1px solid gray;
 }
 .form-fill button{
   height: 30px;
-  width: 210px;
-  background-color: rgb(250, 117, 184);
+  width: 130px;
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(218, 165, 32, 0.863);
   color: white;
   border: none;
   border-radius: 10px;
+}
+.form-fill h3{
+  color: rgb(202, 151, 21);
 }
 /* styles for footer part  */
 footer{
  display: flex;
  flex-direction: column;
  align-items: center;
+ background-color: rgba(0, 0, 0, 0.774);
+ color: whitesmoke;
+ padding-top: 20px;
 }
-footer p,h2{
+footer h2{
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 1.5em;
   line-height: 0px;
+}
+footer p{
+  line-height: 0px;
+  font-size: 0.7em;
 }
 footer span{
   margin-top: 10px;
